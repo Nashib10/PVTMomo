@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Poppins:wght@100;200;300;400;600;700&family=Raleway:ital,wght@1,100&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            background-color: #fff;
+        }
+
+        body::before {
+            margin: -10px;
+            padding: 0px;
+            content: "";
+            color: #000;
+            font-size: 20px;
+            background-image: url(image/homepage.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+            width: 100%;
+            height: 700px;
+            opacity: 0.5;
+        }
+
+        h1 {
+            font-size: 2rem;
+        }
+
+        span {
+            font-size: 1rem;
+            color: #000;
+            font-family: 'Raleway', sans-serif;
+        }
+
+        .formnam {
+            box-sizing: border-box;
+            background-color: blueviolet;
+            border: 3px solid #000;
+            width: 30%;
+            height: 70vh;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .formnam::before {
+            content: "";
+            background-color: aliceblue;
+            background-position: center;
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: -1;
+            opacity: 1;
+            top: 0;
+            left: 0;
+        }
+
+        input[type=text],
+        input[type=password] {
+            height: 25px;
+            border-radius: 5px;
+            width: 40%;
+        }
+
+        #email {
+            margin: 5px;
+            width: 85%;
+            height: 30px;
+        }
+
+        #fnam {
+            margin: 5px;
+            width: 85%;
+            height: 30px;
+        }
+
+        p {
+            color: #000;
+            position: relative;
+            font-size: 12px;
+            text-align: center;
+            margin: 0;
+            padding: 9px;
+            font-family: sans-serif;
+        }
+
+        .a {
+            font-size: 30px;
+            text-decoration: none;
+            background: rgb(4, 247, 4);
+            color: #fff;
+            border-radius: 3px;
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+
+        .a:hover {
+            border-radius: 3px;
+            background: rgb(119, 224, 119);
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body>
+    <script>
+        function myFun() {
+            var text = document.getElementById("email");
+            password_txt = text.value;
+            var text1 = document.getElementById("fnam");
+            password_txt1 = text1.value;
+             if (password_txt && password_txt1.match(/[^A-Za-z0-9]/g)) {
+                alert("\n Sucessfully create your Acoount\n Your Email or Phone is\t"+password_txt+"\nPassword is\t"+password_txt1+ "\n Back to login Page");
+            }
+            else {
+                alert("At Least one Special Character or Number");
+            }
+        }
+    </script>
+    <div class="header">
+
+        <div class="formnam">
+            <h1>Sign Up <span> <br> It's quick and easy.</span></h1>
+            <form action="form1" id="for" method="post"><br>
+
+                <input type="text" id="nam" name="Firstname" placeholder="First Name" required>
+                <input type="text" id="nam" name="Lastname" placeholder="Last Name" required><br>
+                <input type="text" name="Email" id="email" placeholder="Mobile Number or Email" required><br>
+                <input type="password" id="fnam" name="passw" placeholder="New Password" required><br>
+                <p>People who use our service may have uploaded your contact information to website. <br>
+                    You may receive SMS Notifications from us and can opt out any time.</p>
+                <button type="button" onclick="myFun()" class="a">Sign Up</button>
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

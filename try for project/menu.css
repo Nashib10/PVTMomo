@@ -1,0 +1,254 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  background-color: #ffffff;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  color: #000000;
+
+}
+
+html {
+
+  z-index: calc(30px);
+}
+
+h1 {
+  color: #000000;
+  transition: 1s;
+}
+.logo h1{
+  font-size: 30px;
+}
+h1:hover {
+  transform: translateY(-5px);
+}
+
+.divide {
+  display: flex;
+  background-color: blueviolet;
+}
+
+.image img {
+  transition: 1s;
+}
+
+.image img:hover {
+  transform: translateY(-10px);
+
+}
+
+.cont {
+  margin: 100px 40px;
+  transition: 1s;
+}
+
+.cont:hover {
+  transform: translateY(-10px);
+
+}
+
+#top1 {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 10%);
+  background-color: #FFFFFF;
+  display: flex;
+  margin: 0;
+  padding: 10px 15px;
+  justify-content: space-between;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  padding-left: 30px;
+}
+
+.navbar ul li {
+  padding: 20px 50px;
+  transition: 2s;
+}
+
+.navbar ul li:hover {
+  transform: translateY(-10px);
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  padding: 30px;
+
+
+
+}
+
+.navbar ul li a:hover {
+  padding: 30px;
+  background-color: aquamarine;
+  cursor: pointer;
+
+}
+
+.button {
+  margin: 10px;
+  border: 2px solid burlywood;
+  background-color: burlywood;
+  padding: 8px 8px;
+  box-sizing: border-box;
+  border-radius: 16px;
+  transition: 1s;
+}
+
+.button a {
+  padding: 10px;
+  transition: .5s;
+  text-decoration: none;
+
+
+}
+
+.button:hover {
+  transform: translateY(-8px);
+  cursor: pointer;
+}
+
+header {
+  margin: 20px;
+  padding: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  /* box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1); */
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.button-type {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button1 {
+  transition: 1s;
+  margin: 20px 10px;
+  position: relative;
+  box-sizing: border-box;
+  box-shadow: 50px;
+}
+
+.button1 a {
+  padding: 10px;
+  transition: .5s;
+  text-decoration: none;
+
+
+}
+
+.button1:hover {
+  transform: translateY(-8px);
+  cursor: pointer;
+}
+
+.botton {
+
+  margin: 20px;
+  padding: 20px;
+  background-color: yellowgreen;
+}
+
+
+
+.whole_foot {
+  background-color: #FFFFFF;
+}
+
+.fot1 ul {
+  list-style: none;
+}
+
+.sub_fot1 ul li {
+  margin: 2px;
+  padding: 3px;
+}
+
+.sub_fot1 ul li i {
+  display: flex;
+}
+
+.sub_fot2 {
+  display: flex;
+}
+
+.icon {
+  margin: 3px;
+}
+
+.hour {
+  margin: 5px;
+  padding: 30px 125px;
+}
+.fot1 {
+
+  margin: 20px;
+  padding: 40px;
+  display: flex;
+  justify-content: space-around;
+
+}
+.toolbar1 {
+  margin-top: 5px;
+  padding-top: 18px;
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: space-around;
+}
+

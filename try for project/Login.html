@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+    <script>
+        function man(){
+            let phone = document.getElementById("pwt");
+            gmail= phone.value;
+            if(gmail.match(/[^A-Za-z0-9]/g)) {
+                alert("good");
+            }
+        }
+    </script>
+</head>
+<body>
+    <section class="divide">
+    <div class="header">
+    <img src="image/23.png" alt=""class="avatar">
+    <form action="Home.html" method="post">
+     <input type="text"placeholder="Phone or Gmail" id="pwt" required><br>
+     <input type="password" placeholder="Password" required><br>
+     <input type="submit"name=""value="Login" onclick="man()"> <br>
+    <div class="for">
+     <a href="#">Forgot Password?</a>
+    </div>
+     <h2>OR</h2>
+     <div class="box">
+     <a href="Signup.html">Create new Account</a> <br>
+    </div>
+
+    </form>
+     </div>
+</section>
+</body>
+</html>

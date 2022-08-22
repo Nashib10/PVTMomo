@@ -1,0 +1,302 @@
+* {
+    margin: 0;
+    padding: 0;
+   list-style: none;
+}
+  .logo h1{
+    margin-left: 2px;
+  }
+html{
+    background-color: #FFFFFF;
+    z-index: calc(30px);
+}
+h1 {
+    transition: 1s;
+}
+
+h1:hover {
+    transform: translateY(-5px);
+}
+span{
+  font-size: 30px;
+  font-style: italic;
+  font-variant: small-caps;
+}
+.divide {
+    display: flex;
+    background-color: #FAFAFA;
+}
+
+.image img {
+    transition: 1s;
+}
+
+.image img:hover {
+    transform: translateY(-10px);
+
+}
+.fot1 {
+
+  margin: 20px;
+  padding: 40px;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.whole_foot {
+  background-color: #FFFFFF;
+}
+
+.fot1 ul {
+  list-style: none;
+}
+
+.sub_fot1 ul li {
+  margin: 2px;
+  padding: 3px;
+}
+
+.sub_fot1 ul li i {
+  display: flex;
+}
+
+.sub_fot2 {
+  display: flex;
+}
+
+.icon {
+  margin: 3px;
+}
+
+.hour {
+  margin: 5px;
+  padding: 30px 125px;
+}
+
+.toolbar1 {
+  margin-top: 5px;
+  padding-top: 18px;
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.head1 {
+  padding-top: 110px;
+  padding-bottom: 30px;
+  padding-left: 180px;
+  margin-top: 5px;
+  background-size: 40%;
+  background: #FAFAFA;
+  border-top: 1px solid #E7E7E7;
+  border-bottom: 1px solid #E7E7E7;
+}
+
+.head1 h1 {
+  font-size: 40px;
+}
+
+.cont {
+    margin: 100px 40px;
+    transition: 1s;
+}
+
+.cont:hover {
+    transform: translateY(-10px);
+
+}
+
+header {
+    background-color: #ffffff;
+    display: flex;
+    margin: 0px;
+    padding: 10px 15px;
+    justify-content: space-between;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    padding-left: 30px;
+}
+
+.navbar ul li {
+    padding: 20px 50px;
+    transition: 2s;
+}
+.navbar ul li:hover{
+    transform: translateY(-10px);
+}
+.navbar ul li a {
+    text-decoration: none;
+    padding: 30px;
+   
+   
+
+}
+
+.navbar ul li a:hover {
+    padding: 30px;
+    background-color: aquamarine;
+    cursor: pointer;
+    
+}
+
+.button {
+    margin: 10px;
+    border: 2px solid burlywood;
+    background-color: burlywood;
+    padding: 8px 8px;
+    box-sizing: border-box;
+    border-radius: 16px;
+    transition: 1s;
+}
+
+.button a {
+    padding: 10px;
+    transition: .5s;
+    text-decoration: none;
+    
+
+}
+
+.button:hover {
+    transform: translateY(-8px);
+    cursor: pointer;
+}
+footer{
+    margin: 0px;
+    padding: 20px 30px;
+
+    background-color: #FAFAFA;
+}
+.button-type {
+ display: flex;
+ justify-content: space-between;
+}
+
+.button1{
+    transition: 1s;
+    margin: 20px 10px;
+   position: relative;
+   box-sizing: border-box;
+   box-shadow: 50px;
+}
+.button1 a {
+    padding: 10px;
+    transition: .5s;
+    text-decoration: none;
+    
+
+}
+
+.button1:hover {
+    transform: translateY(-8px);
+    cursor: pointer;
+}
+
+.flip{
+    margin: 20px 0px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+footer h1{
+    text-align: center;
+}
+  .flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+  }
+
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+.flip-card-back ul li {
+  font-size: 30px;
+  font-variant: small-caps;
+
+}
+
+  .flip-card-front {
+    background-color: #bbb;
+    /* box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1); */
+    color: black;
+  }
+
+  .flip-card-back {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+  .Botton_menu {
+    margin: 40px -20px 3px -20px;
+    justify-content: space-around;
+
+    display: flex;
+
+  }
+
+  .botton {
+    /* transform-origin: 100% 0;
+    position: relative;
+   
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%; 
+     transform: skewX(3deg); */
+     margin: 20px;
+     padding: 20px;
+    background-color: #FAFAFA; 
+  }
+
+  .memu1 {
+    
+  }
+
+  .icones {
+    
+    text-align: right;
+    box-sizing: border-box;
+
+  }
+
+  .icones i {
+    margin: 1px;
+    padding: 1px 25px;
+
+  }
+  .down{
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  a{
+    text-decoration: none;
+    color: #000;
+  }
